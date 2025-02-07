@@ -1,0 +1,157 @@
+body {
+  background-color: #E1E5F2;
+  color: #E1E5F2; 
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 55px;
+}
+
+#nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  background-color: #022B3A; 
+  overflow: hidden;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+#nav a {
+  text-decoration: none;
+  color: #BFDBF7; 
+  font-size: 18px;
+  font-family: Georgia, sans-serif, serif;
+}
+
+#nav a:hover {
+  color: #F0F0F5; 
+}
+
+#nav li {
+  display: inline-block;
+  float: right;
+  padding-right: 20px
+}
+
+#nav li.home {
+  float: none;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Brush Script MT', cursive, sans-serif;
+  font-size: 50px;
+  color: #1F7A8C; 
+}
+
+h2 {
+  font-family: 'Brush Script MT', cursive, sans-serif;
+  font-size: 35px;
+  color: #1F7A8C; 
+}
+
+p {
+  color: #022B3A; 
+  font-family: 'Book Antiqua', sans-serif, serif;
+}
+
+.resume-container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.resume-section header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.resume-section header h1 {
+  margin: 0;
+  font-size: 3em;
+  color: #022B3A;
+}
+.resume-section header p {
+  margin: 0;
+  font-size: 1.2em;
+  color: #1F7A8C;
+}
+
+.resume-section header a {
+  text-decoration: none;
+  color: #1F7A8C; 
+}
+
+.resume-section h2 {
+  border-bottom: 2px solid #022B3A;
+}
+.resume-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.jobTitle {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Georgia, sans-serif, serif;
+  color: #022B3A;
+}
+.date {
+  font-size: 18px;
+  float: right;
+  color: #888;
+}
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.skills-list li {
+  margin-right: 15px;
+  background: #022B3A;
+  color: #E1E5F2;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.footer-container {
+  background-color: #022B3A;
+  border-top: 1px solid #BFDBF7; 
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer-section h3 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  color: #E1E5F2; 
+}
+
+.footer-section p {
+  margin: 0;
+  color: #BFDBF7; 
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #BFDBF7; 
+}
+
+.icons ul {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  list-style: none;
+  padding: 0;
+}

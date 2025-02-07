@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="Personal.css">
+        
+        <title>About Me</title>
+</head>
+
+<body>
+        <div id="nav">
+                        <ul>
+                                <li class="home"><a href="Home.html">Home</a></li>
+                                <li><a href="Contact.html">Contact</a></li>
+                                <li><a href="Portfolio.html">Portfolio</a></li>
+                                <li><a href="Resume.html">Resume</a></li>
+                        </ul>
+        </div>
+
+        <div class="form">
+        <form action="contact.php" method="POST">
+                <h3>Contact Form</h3>
+                <p>Feel free to contact me through this form.</p>
+
+                <label for="FName">First Name:</label><br>
+                <input type="text" id="FName" name="FName"><br><br>
+
+                <label for="LName">Last Name:</label><br>
+                <input type="text" id="LName" name="LName"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="textbox">Enter Message:</label><br>
+                <textarea id="textbox" name="textbox" placeholder="Type your text here..."></textarea><br><br>
+
+        <input type="submit" value="Submit"><br>
+        <input type="reset" value="Reset">
+        </form>
+ 
+        </div>
+
+        <footer class="footer-container">
+                <div class="footer-section">
+                        <h3>Phone:</h3>
+            <p><span class="copy-button" onclick="copyToClipboard('+1 (240) 709-9266')">+1 (215) 316-4497</span></p>
+                </div>
+                <div class="footer-section">            
+                        <h3>Email:</h3> 
+                        <p><span class="copy-button" onclick="copyToClipboard('atolagbegloria@gmail.com')">atolagbegloria@gmail.com</span></p>
+        </div>
+        <div class="footer-section">
+                <h3>Follow Me</h3>
+                <div class="icons">
+                <ul>
+                   <li><a href="https://www.linkedin.com/in/gloriaatolagbe/" target="_blank"><img src="Images/linkedin-icon.svg" alt="linkedin"width="40"></a></li>
+                   <li><a href="https://github.com/The-Donna/Portfolio" target="_blank"><img src="Images/github-icon.png" alt="github" width="40"></a></li>
+                </ul>
+                </div>
+        </div>
+        <div class="footer-section">
+                        <p>&copy; Gloria Atolagbe <span id="year"></span>. All rights reserved.</p>
+                </div>
+        </footer>
+
+</div>
+</html>
