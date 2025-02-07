@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $message
         ";
         $headers = "From: $email\r\n";
-        $headers .= "Reply-To: $email\r\n";
+        $headers = "Reply-To: $email\r\n";
 
         // Sending the email
         if (mail($to, $subject, $body, $headers)) {
