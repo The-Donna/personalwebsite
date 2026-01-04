@@ -302,8 +302,11 @@ p {
     font-size: 16px;
   }
 
-  .square {
-    height: auto;
+  .square,
+  .profile-image img {
+    max-width: 100%;   
+    height: auto;     
+    display: block;  
   }
 
   .form {
@@ -314,3 +317,4 @@ p {
     font-size: 14px;
   }
 }
+
