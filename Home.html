@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="Personal.css">
+  <title>About Me</title>
+</head>
+
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <nav id="nav">
+      <ul>
+        <li class="home"><a href="Home.html">Gloria Atolagbe</a></li>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Resume.html">Resume</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+
+    <section class="profile-card">
+		<div class="profile-image"></div>
+      		<img class="square" src="Images/pic3.jpeg" alt="Photo of Gloria Atolagbe">
+		</div>	
+
+		<div class="profile-content page">
+		<h1 id="greeting">Hi, I'm Gloria.</h1>
+		<img src="Images/handwave.gif" width="120" height="120" alt="Waving hand animation">
+
+		<h2>Introduction</h2>
+		<p>
+			My name is Gloria Atolagbe, and I am currently pursuing a Bachelor’s degree in Computing and 
+			Security Technology at Drexel University, building on my Associate’s degree in Information Technology from the 
+			Community College of Baltimore County.
+		</p>
+
+		<p>
+			I am passionate about technology and eager to grow as a professional in the field. I enjoy learning new skills, 
+			tackling challenges with a positive mindset, and applying constructive feedback to improve. My goal is to turn my academic 
+			foundation into real-world experience and contribute meaningfully to the tech industry.
+		</div>
+
+	</section>
+
+  </main>
+
+  <footer class="footer-container">
+
+    <section class="footer-section">
+      <h3>Phone</h3>
+      <p>
+        <span class="copy-button"
+              onclick="copyToClipboard('+1 (215) 316-4497')">
+          +1 (215) 316-4497
+        </span>
+      </p>
+    </section>
+
+    <section class="footer-section">
+      <h3>Email</h3>
+      <p>
+        <span class="copy-button"
+              onclick="copyToClipboard('atolagbegloria@gmail.com')">
+          atolagbegloria@gmail.com
+        </span>
+      </p>
+    </section>
+
+    <section class="footer-section">
+      <h3>Follow Me</h3>
+      <div class="icons">
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/gloriaatolagbe/" target="_blank">
+              <img src="Images/linkedin-icon.svg" alt="LinkedIn profile" width="40">
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/The-Donna/personalwebsite" target="_blank">
+              <img src="Images/github-icon.png" alt="GitHub profile" width="40">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="footer-section">
+      <p>&copy; Gloria Atolagbe <span id="year"></span>. All rights reserved.</p>
+    </section>
+
+  </footer>
+
+  <!-- Script -->
+  <script>
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text)
+        .then(() => alert(`Copied: ${text}`))
+        .catch(err => console.error('Failed to copy:', err));
+    }
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const greeting = document.getElementById("greeting");
+    greeting.addEventListener("mouseover", () => {
+      greeting.textContent = "Welcome to my page!";
+    });
+    greeting.addEventListener("mouseout", () => {
+      greeting.textContent = "Hi, I'm Gloria.";
+    });
+  </script>
+
+</body>
+</html>

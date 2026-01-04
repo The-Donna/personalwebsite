@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="Personal.css">
+        
+        <title>About Me</title>
+</head>
+
+<body>
+        <header>
+                <nav id="nav">
+                        <ul>
+                                <li class="home"><a href="Home.html">Gloria Atolagbe</a></li>
+                                <li><a href="Home.html">Home</a></li>
+                                <li><a href="Resume.html">Resume</a></li>
+                                <li><a href="Contact.html">Contact</a></li>
+                        </ul>
+                </nav>
+        </header>
+
+
+        <main class="form-container">
+                <form action="https://formspree.io/f/xyzkpplg" method="POST" class="contact-form">
+                        <h3>Contact Me</h3>
+                        <p>Feel free to reach out using this form.</p>
+
+                        <div class="form-group">
+                                <label for="FName">First Name</label>
+                                <input type="text" id="FName" name="FName" placeholder="John" required>
+                        </div>
+
+                        <div class="form-group">
+                                <label for="LName">Last Name</label>
+                                <input type="text" id="LName" name="LName" placeholder="Doe" required>
+                        </div>
+
+                        <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                                <label for="textbox">Message</label>
+                                <textarea id="textbox" name="textbox" placeholder="Type your message here..." rows="5" required></textarea>
+                        </div>
+
+                        <div class="form-buttons">
+                                <input type="submit" value="Send Message" class="btn-submit">
+                                <input type="reset" value="Reset" class="btn-reset">
+                        </div>
+                </form>
+        </main>
+ 
+        </div>
+
+        <footer class="footer-container">
+
+        <section class="footer-section">
+                <h3>Phone</h3>
+                <p>
+                        <span class="copy-button"
+                        onclick="copyToClipboard('+1 (215) 316-4497')">
+                        +1 (215) 316-4497
+                        </span>
+                </p>
+                </section>
+
+                <section class="footer-section">
+                <h3>Email</h3>
+                <p>
+                        <span class="copy-button"
+                        onclick="copyToClipboard('atolagbegloria@gmail.com')">
+                        atolagbegloria@gmail.com
+                        </span>
+                </p>
+                </section>
+
+                <section class="footer-section">
+                <h3>Follow Me</h3>
+                <div class="icons">
+                        <ul>
+                        <li>
+                        <a href="https://www.linkedin.com/in/gloriaatolagbe/" target="_blank">
+                        <img src="Images/linkedin-icon.svg" alt="LinkedIn profile" width="40">
+                        </a>
+                        </li>
+                        <li>
+                        <a href="https://github.com/The-Donna/personalwebsite" target="_blank">
+                        <img src="Images/github-icon.png" alt="GitHub profile" width="40">
+                        </a>
+                        </li>
+                        </ul>
+                </div>
+                </section>
+
+                <section class="footer-section">
+                <p>&copy; Gloria Atolagbe <span id="year"></span>. All rights reserved.</p>
+                </section>
+
+        </footer>
+
+        <script>
+                document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+
+</div>
+</html>
