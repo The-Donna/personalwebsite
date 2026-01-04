@@ -20,12 +20,13 @@
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
   max-width: 1100px;
   margin: 0 auto;
+  align-items: center;
 }
 
 .profile-image img {
   width: 280px;
   height: auto;
-  object-fit: cover;
+  display: block;
 }  
 
 body {
@@ -302,11 +303,20 @@ p {
     font-size: 16px;
   }
 
+  .profile-card {
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .profile-content img {
+    width: 80px;
+  }
+
   .square,
   .profile-image img {
-    max-width: 100%;   
+    max-width: 90%;   
     height: auto;     
-    display: block;  
+    margin: 0 auto;  
   }
 
   .form {
@@ -317,4 +327,6 @@ p {
     font-size: 14px;
   }
 }
+
+
 
